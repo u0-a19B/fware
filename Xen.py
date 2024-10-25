@@ -87,7 +87,7 @@ try:
             print('-'*20)
             #out_file.write(ph_nums+","+str(ec.get_attribute('src'))+"\n")
             if ec.get_attribute('src') == None:
-                file2.write(ph_nums+','+'None')
+                file2.write(ph_nums+','+'None\n')
                 no_profile_count += 1
             else:
                 file1.write(ph_nums+","+str(ec.get_attribute('src'))+"\n")
@@ -95,7 +95,7 @@ try:
             
         send_to_ele.send_keys(Keys.CONTROL + 'a')
         send_to_ele.send_keys(Keys.BACKSPACE)
-        time.sleep(0.5)
+        time.sleep(0.2)
         counter += 1
 
     end_time = time.time()
